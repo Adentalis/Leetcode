@@ -6,7 +6,7 @@ function reduce(nums: number[], fn: Fn, init: number): number {
   }
 
   let current = init;
-  nums.forEach((e, i) => {
+  nums.forEach((e) => {
     current = fn(e, current);
   });
   return current;
